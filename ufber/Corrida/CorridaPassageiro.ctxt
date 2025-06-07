@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=CorridaPassageiro
+comment1.params=trajeto\ cliente\ quantidadePassageiros
+comment1.target=CorridaPassageiro(Trajeto.Trajeto,\ Usuario.Cliente,\ int)
+comment2.params=
+comment2.target=double\ calcularValor()
+comment3.params=
+comment3.target=int\ getQuantidadePassageiros()
+numComments=4

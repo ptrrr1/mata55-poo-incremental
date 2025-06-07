@@ -1,0 +1,73 @@
+Class documentation
+<---- javadoc command: ---->
+javadoc
+-author
+-version
+-nodeprecated
+-package
+-Xdoclint:none
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+17
+-classpath
+/app/bluej/lib/bluejcore.jar:/app/bluej/lib/junit-jupiter-api-5.5.2.jar:/app/bluej/lib/junit-platform-launcher-1.5.2.jar:/app/bluej/lib/junit-vintage-engine-5.5.2.jar:/app/bluej/lib/junit-jupiter-engine-5.5.2.jar:/app/bluej/lib/junit-platform-commons-1.5.2.jar:/app/bluej/lib/junit-jupiter-5.5.2.jar:/app/bluej/lib/junit-4.12.jar:/app/bluej/lib/junit-jupiter-params-5.5.2.jar:/app/bluej/lib/junit-platform-suite-api-1.5.2.jar:/app/bluej/lib/junit-platform-engine-1.5.2.jar:/app/bluej/lib/hamcrest-core-1.3.jar:/app/bluej/lib/opentest4j-1.2.0.jar:/app/bluej/lib/lang-stride.jar:/app/bluej/lib/javafx/javafx.base.jar:/app/bluej/lib/javafx/javafx.controls.jar:/app/bluej/lib/javafx/javafx.fxml.jar:/app/bluej/lib/javafx/javafx.graphics.jar:/app/bluej/lib/javafx/javafx.media.jar:/app/bluej/lib/javafx/javafx.properties.jar:/app/bluej/lib/javafx/javafx.swing.jar:/app/bluej/lib/javafx/javafx.web.jar:/home/ptrrr/UFBA/2025.1/MATA55-POO/INCREMENTAL/ufber-v2
+-d
+/home/ptrrr/UFBA/2025.1/MATA55-POO/INCREMENTAL/ufber-v2/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+/home/ptrrr/UFBA/2025.1/MATA55-POO/INCREMENTAL/ufber-v2/Corrida/CorridaMercadoria.java
+<---- end of javadoc command ---->
+Loading source file /home/ptrrr/UFBA/2025.1/MATA55-POO/INCREMENTAL/ufber-v2/Corrida/CorridaMercadoria.java...
+Constructing Javadoc information...
+/home/ptrrr/UFBA/2025.1/MATA55-POO/INCREMENTAL/ufber-v2/Corrida/Corrida.java:8: error: '.' expected
+import Endereco;
+               ^
+/home/ptrrr/UFBA/2025.1/MATA55-POO/INCREMENTAL/ufber-v2/Corrida/Corrida.java:9: error: '.' expected
+import Trajeto;
+              ^
+/home/ptrrr/UFBA/2025.1/MATA55-POO/INCREMENTAL/ufber-v2/Corrida/CorridaMercadoria.java:7: error: cannot find symbol
+    public CorridaMercadoria(Trajeto trajeto, Cliente cliente, String descricaoItem, double peso) {
+                             ^
+  symbol:   class Trajeto
+  location: class CorridaMercadoria
+/home/ptrrr/UFBA/2025.1/MATA55-POO/INCREMENTAL/ufber-v2/Corrida/CorridaMercadoria.java:7: error: cannot find symbol
+    public CorridaMercadoria(Trajeto trajeto, Cliente cliente, String descricaoItem, double peso) {
+                                              ^
+  symbol:   class Cliente
+  location: class CorridaMercadoria
+/home/ptrrr/UFBA/2025.1/MATA55-POO/INCREMENTAL/ufber-v2/Corrida/Corrida.java:14: error: cannot find symbol
+    protected Endereco origem;
+              ^
+  symbol:   class Endereco
+  location: class Corrida
+/home/ptrrr/UFBA/2025.1/MATA55-POO/INCREMENTAL/ufber-v2/Corrida/Corrida.java:15: error: cannot find symbol
+    protected Endereco destino;
+              ^
+  symbol:   class Endereco
+  location: class Corrida
+/home/ptrrr/UFBA/2025.1/MATA55-POO/INCREMENTAL/ufber-v2/Corrida/Corrida.java:21: error: cannot find symbol
+    public Corrida(Trajeto trajeto, Cliente cliente) {
+                   ^
+  symbol:   class Trajeto
+  location: class Corrida
+/home/ptrrr/UFBA/2025.1/MATA55-POO/INCREMENTAL/ufber-v2/Corrida/Corrida.java:36: error: cannot find symbol
+    public Endereco getOrigem() {
+           ^
+  symbol:   class Endereco
+  location: class Corrida
+/home/ptrrr/UFBA/2025.1/MATA55-POO/INCREMENTAL/ufber-v2/Corrida/Corrida.java:40: error: cannot find symbol
+    public Endereco getDestino() {
+           ^
+  symbol:   class Endereco
+  location: class Corrida
+/home/ptrrr/UFBA/2025.1/MATA55-POO/INCREMENTAL/ufber-v2/Usuario/Cliente.java:23: error: cannot find symbol
+    public Corrida solicitarCorrida(Trajeto trajeto, TipoContrato tipoCorrida) {
+                                    ^
+  symbol:   class Trajeto
+  location: class Cliente
+10 errors

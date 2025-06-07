@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=CorridaCarona
+comment1.params=trajeto\ cliente
+comment1.target=CorridaCarona(Trajeto.Trajeto,\ Usuario.Cliente)
+comment2.params=passageiro
+comment2.target=void\ adicionarPassageiro(Usuario.Cliente)
+comment3.params=
+comment3.target=double\ calcularValor()
+comment4.params=
+comment4.target=java.util.List\ getPassageiros()
+numComments=5

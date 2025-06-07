@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Corrida
+comment1.params=trajeto\ cliente
+comment1.target=Corrida(Trajeto.Trajeto,\ Usuario.Cliente)
+comment10.params=motorista
+comment10.target=void\ setMotorista(Usuario.Motorista)
+comment11.params=
+comment11.target=Usuario.Cliente\ getCliente()
+comment12.params=tipoCorrida
+comment12.target=double\ getFatorDeCorrida(Enums.TipoContrato)
+comment2.params=
+comment2.target=double\ calcularValor()
+comment3.params=
+comment3.target=java.time.LocalDateTime\ getDataHora()
+comment4.params=
+comment4.target=Trajeto.Endereco\ getOrigem()
+comment5.params=
+comment5.target=Trajeto.Endereco\ getDestino()
+comment6.params=
+comment6.target=double\ getDistancia()
+comment7.params=
+comment7.target=Enums.StatusCorrida\ getStatus()
+comment8.params=status
+comment8.target=void\ setStatus(Enums.StatusCorrida)
+comment9.params=
+comment9.target=Usuario.Motorista\ getMotorista()
+numComments=13
