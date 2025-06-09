@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Administrador
+comment1.params=nomeCompleto\ cpf\ matricula
+comment1.target=Administrador(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment10.params=u
+comment10.target=void\ apagarUsuario(Sistema.Usuario.Usuario)
+comment11.params=u\ novoNome\ novoTelefone
+comment11.target=Sistema.Usuario.Usuario\ editarUsuario(Sistema.Usuario.Usuario,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=void\ cadastrar()
+comment3.params=origem\ destino\ distancia
+comment3.target=Sistema.Corrida.Trajeto.Trajeto\ criarTrajeto(Sistema.Corrida.Trajeto.Endereco,\ Sistema.Corrida.Trajeto.Endereco,\ double)
+comment4.params=trajeto\ origem
+comment4.target=Sistema.Corrida.Trajeto.Trajeto\ editarTrajetoOrigem(Sistema.Corrida.Trajeto.Trajeto,\ Sistema.Corrida.Trajeto.Endereco)
+comment5.params=trajeto\ destino
+comment5.target=Sistema.Corrida.Trajeto.Trajeto\ editarTrajetoDestino(Sistema.Corrida.Trajeto.Trajeto,\ Sistema.Corrida.Trajeto.Endereco)
+comment6.params=trajeto\ distancia
+comment6.target=Sistema.Corrida.Trajeto.Trajeto\ editarTrajetoDistancia(Sistema.Corrida.Trajeto.Trajeto,\ double)
+comment7.params=trajeto
+comment7.target=boolean\ removerTrajeto(Sistema.Corrida.Trajeto.Trajeto)
+comment8.params=u
+comment8.target=void\ bloquearUsuario(Sistema.Usuario.Usuario)
+comment9.params=u
+comment9.target=void\ desbloquearUsuario(Sistema.Usuario.Usuario)
+numComments=12

@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Motorista
+comment1.params=nomeCompleto\ telefone\ cpf\ tipoContrato\ veiculo
+comment1.target=Motorista(java.lang.String,\ java.lang.String,\ java.lang.String,\ Sistema.Enums.TipoContrato,\ Sistema.Veiculo.Veiculo)
+comment2.params=nomeCompleto\ cpf\ tipoContrato\ veiculo
+comment2.target=Motorista(java.lang.String,\ java.lang.String,\ Sistema.Enums.TipoContrato,\ Sistema.Veiculo.Veiculo)
+comment3.params=
+comment3.target=void\ cadastrar()
+comment4.params=corrida
+comment4.target=boolean\ aceitarCorrida(Sistema.Corrida.Corrida)
+comment5.params=corrida
+comment5.target=void\ finalizarCorrida(Sistema.Corrida.Corrida)
+comment6.params=
+comment6.target=Sistema.Enums.TipoContrato\ getTipoContrato()
+comment7.params=
+comment7.target=Sistema.Veiculo.Veiculo\ getVeiculo()
+comment8.params=
+comment8.target=java.util.List\ getCorridasAtivas()
+numComments=9

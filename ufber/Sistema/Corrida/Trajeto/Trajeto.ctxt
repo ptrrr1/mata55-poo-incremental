@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Trajeto
+comment1.params=origem\ destino\ distancia
+comment1.target=Trajeto(Endereco,\ Endereco,\ double)
+comment2.params=
+comment2.target=double\ calcularTempoEstimado()
+comment3.params=t
+comment3.target=boolean\ equals(Trajeto)
+comment4.params=
+comment4.target=Endereco\ getOrigem()
+comment5.params=origem
+comment5.target=void\ setOrigem(Endereco)
+comment6.params=
+comment6.target=Endereco\ getDestino()
+comment7.params=destino
+comment7.target=void\ setDestino(Endereco)
+comment8.params=
+comment8.target=double\ getDistancia()
+comment9.params=distancia
+comment9.target=void\ setDistancia(double)
+numComments=10

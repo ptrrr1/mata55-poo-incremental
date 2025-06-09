@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=UFBER
+comment1.params=
+comment1.target=UFBER()
+comment2.params=
+comment2.target=java.util.ArrayList\ getHistoricoCorridas()
+comment3.params=corrida
+comment3.target=boolean\ registrarCorrida(Corrida.Corrida)
+comment4.params=trajeto
+comment4.target=boolean\ registrarTrajeto(Corrida.Trajeto.Trajeto)
+comment5.params=cliente
+comment5.target=boolean\ registrarCliente(Usuario.Cliente)
+comment6.params=motorista
+comment6.target=boolean\ registrarMotorista(Usuario.Motorista)
+numComments=7

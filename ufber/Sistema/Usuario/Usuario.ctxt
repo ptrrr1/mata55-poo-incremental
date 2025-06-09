@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Usuario
+comment1.params=nomeCompleto\ telefone\ cpf
+comment1.target=Usuario(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment10.params=
+comment10.target=java.lang.String\ getCpf()
+comment11.params=u
+comment11.target=boolean\ equals(Usuario)
+comment2.params=nomeCompleto\ cpf
+comment2.target=Usuario(java.lang.String,\ java.lang.String)
+comment3.params=
+comment3.target=void\ cadastrar()
+comment4.params=
+comment4.target=boolean\ isAtivo()
+comment5.params=novoStatus
+comment5.target=void\ setStatusAtivo(boolean)
+comment6.params=
+comment6.target=java.lang.String\ getNomeCompleto()
+comment7.params=nomeCompleto
+comment7.target=void\ setNomeCompleto(java.lang.String)
+comment8.params=
+comment8.target=java.lang.String\ getTelefone()
+comment9.params=telefone
+comment9.target=void\ setTelefone(java.lang.String)
+numComments=12

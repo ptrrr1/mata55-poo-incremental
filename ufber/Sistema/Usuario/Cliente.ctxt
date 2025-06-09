@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Cliente
+comment1.params=nomeCompleto\ telefone\ cpf
+comment1.target=Cliente(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=nomeCompleto\ cpf
+comment2.target=Cliente(java.lang.String,\ java.lang.String)
+comment3.params=
+comment3.target=void\ cadastrar()
+comment4.params=trajeto\ tipoCorrida
+comment4.target=Sistema.Corrida.Corrida\ solicitarCorrida(Sistema.Corrida.Trajeto.Trajeto,\ Sistema.Enums.TipoContrato)
+comment5.params=tipoCorrida
+comment5.target=Sistema.Corrida.Corrida\ solicitarCorrida(Sistema.Enums.TipoContrato)
+comment6.params=trajeto
+comment6.target=void\ selecionarTrajeto(Sistema.Corrida.Trajeto.Trajeto)
+comment7.params=
+comment7.target=java.util.List\ getHistoricoCorridas()
+comment7.text=\ \ \ \ \n\ \ \ \ public\ void\ avaliarMotorista(Motorista\ motorista,\ int\ rating)\ {\n\ \ \ \ \ \ \ \ System.out.println("Motorista\ "\ +\ motorista.getNomeCompleto()\ +\ "\ avaliado\ com\ "\ +\ rating\ +\ "\ estrelas");\n\ \ \ \ }\n
+numComments=8
