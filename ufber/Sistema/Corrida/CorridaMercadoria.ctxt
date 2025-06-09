@@ -1,11 +1,13 @@
 #BlueJ class context
 comment0.target=CorridaMercadoria
-comment1.params=trajeto\ cliente\ descricaoItem\ tamanho
-comment1.target=CorridaMercadoria(Trajeto.Trajeto,\ Sistema.Usuario.Cliente,\ java.lang.String,\ Sistema.Enums.Tamanho)
-comment2.params=
-comment2.target=double\ calcularValor()
+comment1.params=trajeto\ remetente\ destinatario\ descricaoItem\ tamanho
+comment1.target=CorridaMercadoria(Trajeto.Trajeto,\ Sistema.Usuario.Cliente,\ Sistema.Usuario.Cliente,\ java.lang.String,\ Sistema.Enums.Tamanho)
+comment2.params=trajeto\ remetente\ destinatario\ descricaoItem\ tamanho\ hora
+comment2.target=CorridaMercadoria(Trajeto.Trajeto,\ Sistema.Usuario.Cliente,\ Sistema.Usuario.Cliente,\ java.lang.String,\ Sistema.Enums.Tamanho,\ java.time.LocalDateTime)
 comment3.params=
-comment3.target=java.lang.String\ getDescricaoItem()
+comment3.target=double\ calcularValor()
 comment4.params=
-comment4.target=Sistema.Enums.Tamanho\ getTamanho()
-numComments=5
+comment4.target=java.lang.String\ getDescricaoItem()
+comment5.params=
+comment5.target=Sistema.Enums.Tamanho\ getTamanho()
+numComments=6

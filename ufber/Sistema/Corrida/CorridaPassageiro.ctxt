@@ -2,8 +2,10 @@
 comment0.target=CorridaPassageiro
 comment1.params=trajeto\ cliente\ quantidadePassageiros
 comment1.target=CorridaPassageiro(Trajeto.Trajeto,\ Sistema.Usuario.Cliente,\ int)
-comment2.params=
-comment2.target=double\ calcularValor()
+comment2.params=trajeto\ cliente\ quantidadePassageiros\ hora
+comment2.target=CorridaPassageiro(Trajeto.Trajeto,\ Sistema.Usuario.Cliente,\ int,\ java.time.LocalDateTime)
 comment3.params=
-comment3.target=int\ getQuantidadePassageiros()
-numComments=4
+comment3.target=double\ calcularValor()
+comment4.params=
+comment4.target=int\ getQuantidadePassageiros()
+numComments=5

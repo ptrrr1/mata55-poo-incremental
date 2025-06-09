@@ -7,17 +7,37 @@ import Sistema.Corrida.Corrida;
 import Sistema.Corrida.Trajeto.Trajeto;
 import Sistema.Usuario.Motorista;
 import Sistema.Usuario.Cliente;
+import Sistema.Enums.TipoContrato;
 
 public class UFBER {
-    private ArrayList<Corrida> corridas = new ArrayList<Corrida>();
-    private ArrayList<Trajeto> trajetos = new ArrayList<Trajeto>();
-    private ArrayList<Motorista> motoristas = new ArrayList<Motorista>();
-    private ArrayList<Cliente> clientes = new ArrayList<Cliente>();
+    /*
+     * Metodos sao static pois esta eh a classe de gerenciamento do sistema.
+     * Qualquer classe/metodo que utilize esta classe deve acessar as mesmas informacoes.
+     * Esta classe nao foi transformada em um singleton, mas essa decisao foi considerada,
+     * acredito que apenas ter variaveis do tipo static seja suficiente
+     */
+    
+    private static ArrayList<Corrida> corridas = new ArrayList<Corrida>();
+    private static ArrayList<Trajeto> trajetos = new ArrayList<Trajeto>();
+    private static ArrayList<Motorista> motoristas = new ArrayList<Motorista>();
+    private static ArrayList<Cliente> clientes = new ArrayList<Cliente>();
     
     public UFBER() {}
     
     public ArrayList<Corrida> getHistoricoCorridas() {
         return new ArrayList<>(this.corridas);
+    }
+    
+    public ArrayList<Trajeto> getTrajetos() {
+        return new ArrayList<>(this.trajetos);
+    }
+    
+    public ArrayList<Motorista> getMotoristas() {
+        return new ArrayList<>(this.motoristas);
+    }
+    
+    public ArrayList<Cliente> getClientes() {
+        return new ArrayList<>(this.clientes);
     }
     
     public boolean registrarCorrida(Corrida corrida) {
@@ -86,5 +106,44 @@ public class UFBER {
         }
         
         return !isIn;
+    }
+    
+    public ArrayList<Motorista> encontrarMotoristasProLabore() {
+        ArrayList<Motorista> motoristas_disp = new ArrayList<>();
+        
+        for (Motorista m : this.motoristas) {
+            TipoContrato m_contrato = m.getTipoContrato();
+            if (m.isAtivo() && (m_contrato == TipoContrato.PRO_LABORE || m_contrato == TipoContrato.ENTREGA)) {
+                motoristas_disp.add(m);
+            }
+        }
+        
+        return motoristas_disp;
+    }
+    
+    public ArrayList<Motorista> encontrarMotoristasCarona() {
+        ArrayList<Motorista> motoristas_disp = new ArrayList<>();
+        
+        for (Motorista m : this.motoristas) {
+            TipoContrato m_contrato = m.getTipoContrato();
+            if (m.isAtivo() && m_contrato == TipoContrato.CARONA) {
+                motoristas_disp.add(m);
+            }
+        }
+        
+        return motoristas_disp;
+    }
+    
+    public ArrayList<Motorista> encontrarMotoristasEntrega() {
+        ArrayList<Motorista> motoristas_disp = new ArrayList<>();
+        
+        for (Motorista m : this.motoristas) {
+            TipoContrato m_contrato = m.getTipoContrato();
+            if (m.isAtivo() && m_contrato == TipoContrato.ENTREGA) {
+                motoristas_disp.add(m);
+            }
+        }
+        
+        return motoristas_disp;
     }
 }

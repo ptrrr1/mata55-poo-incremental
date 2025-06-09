@@ -15,6 +15,10 @@ public class Trajeto {
         return 0.0; // TBD
     }
     
+    public String toString() {
+        return "ORIGEM: " + this.origem.toString() + "\nDESTINO: " + this.destino.toString() + "\nDISTANCIA: " + this.distancia;
+    }
+    
     public boolean equals(Trajeto t) {
         return this.origem.equals(t.getOrigem()) && 
                 this.origem.equals(t.getOrigem()) && 

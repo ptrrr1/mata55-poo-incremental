@@ -13,14 +13,6 @@ public class Endereco {
         this.bairro = bairro;
     }
 
-    public void setComplemento(String complemento) {
-        this.complemento = complemento;
-    }
-
-    public void setReferencia(String referencia) {
-        this.referencia = referencia;
-    }
-
     public String getEnderecoCompleto() {
         return logradouro + ", " + numero + 
                (complemento != null ? " - " + complemento : "") + 
@@ -28,28 +20,52 @@ public class Endereco {
                (referencia != null ? " (" + referencia + ")" : "");
     }
     
-    public boolean equals(Endereco e) {
-        return this.getEnderecoCompleto() == e.getEnderecoCompleto();
+    public String toString() {
+        return this.getEnderecoCompleto();
     }
-
+    
+    public boolean equals(Endereco e) {
+        return this.getEnderecoCompleto().equals(e.getEnderecoCompleto());
+    }
+    
     // Getters
     public String getLogradouro() {
         return logradouro;
+    }
+    
+    public void setLogradouro(String logradouro) {
+        this.logradouro = logradouro;
     }
 
     public String getNumero() {
         return numero;
     }
+    
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
 
     public String getComplemento() {
         return complemento;
+    }
+    
+    public void setComplemento(String complemento) {
+        this.complemento = complemento;
     }
 
     public String getBairro() {
         return bairro;
     }
+    
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
+    }
 
     public String getReferencia() {
         return referencia;
+    }
+    
+    public void setReferencia(String referencia) {
+        this.referencia = referencia;
     }
 }

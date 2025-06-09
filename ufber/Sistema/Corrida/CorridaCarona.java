@@ -2,6 +2,7 @@ package Sistema.Corrida;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.time.LocalDateTime;
 
 import Sistema.Corrida.Trajeto.Trajeto;
 import Sistema.Usuario.Cliente;
@@ -11,6 +12,12 @@ public class CorridaCarona extends Corrida {
 
     public CorridaCarona(Trajeto trajeto, Cliente cliente) {
         super(trajeto, cliente);
+        this.passageiros = new ArrayList<>();
+        this.passageiros.add(cliente);
+    }
+    
+    public CorridaCarona(Trajeto trajeto, Cliente cliente, LocalDateTime hora) {
+        super(trajeto, cliente, hora);
         this.passageiros = new ArrayList<>();
         this.passageiros.add(cliente);
     }

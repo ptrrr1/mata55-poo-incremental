@@ -11,20 +11,20 @@ import Sistema.Enums.TipoContrato;
 public class Motorista extends Usuario {
     private TipoContrato tipoContrato;
     private Veiculo veiculo;
-    private List<Corrida> corridasAtivas;
+    private List<Corrida> historicoCorrida;
 
     public Motorista(String nomeCompleto, String telefone, String cpf, TipoContrato tipoContrato, Veiculo veiculo) {
         super(nomeCompleto, telefone, cpf);
         this.tipoContrato = tipoContrato;
         this.veiculo = veiculo;
-        this.corridasAtivas = new ArrayList<>();
+        this.historicoCorrida = new ArrayList<>();
     }
     
     public Motorista(String nomeCompleto, String cpf, TipoContrato tipoContrato, Veiculo veiculo) {
         super(nomeCompleto, cpf);
         this.tipoContrato = tipoContrato;
         this.veiculo = veiculo;
-        this.corridasAtivas = new ArrayList<>();
+        this.historicoCorrida = new ArrayList<>();
     }
 
     @Override
@@ -37,16 +37,16 @@ public class Motorista extends Usuario {
         if (corrida.getStatus() == StatusCorrida.SOLICITADA) {
             corrida.setStatus(StatusCorrida.ACEITA);
             corrida.setMotorista(this);
-            corridasAtivas.add(corrida);
+            historicoCorrida.add(corrida);
             return true;
         }
         return false;
     }
 
     public void finalizarCorrida(Corrida corrida) {
-        if (corridasAtivas.contains(corrida)) {
+        if (historicoCorrida.contains(corrida)) {
             corrida.setStatus(StatusCorrida.FINALIZADA);
-            corridasAtivas.remove(corrida);
+            historicoCorrida.remove(corrida);
             System.out.println("Corrida finalizada. Valor: R$" + corrida.calcularValor());
         }
     }
@@ -60,7 +60,7 @@ public class Motorista extends Usuario {
         return veiculo;
     }
 
-    public List<Corrida> getCorridasAtivas() {
-        return new ArrayList<>(corridasAtivas);
+    public List<Corrida> getHistoricoCorrida() {
+        return new ArrayList<>(historicoCorrida);
     }
 }

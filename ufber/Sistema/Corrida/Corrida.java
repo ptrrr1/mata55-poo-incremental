@@ -24,6 +24,13 @@ public abstract class Corrida {
         this.status = StatusCorrida.SOLICITADA;
         this.cliente = cliente;
     }
+    
+    public Corrida(Trajeto trajeto, Cliente cliente, LocalDateTime hora) {
+        this.dataHora = hora;
+        this.trajeto = trajeto;
+        this.status = StatusCorrida.SOLICITADA;
+        this.cliente = cliente;
+    }
 
     public abstract double calcularValor();
 
