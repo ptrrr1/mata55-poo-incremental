@@ -1,9 +1,12 @@
 package Sistema.Corrida;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 
+import Sistema.UFBER;
 import Sistema.Corrida.Trajeto.Trajeto;
 import Sistema.Usuario.Cliente;
+import Sistema.Usuario.Motorista;
 import Sistema.Enums.Tamanho;
 import Sistema.Enums.TipoContrato;
 
@@ -24,6 +27,11 @@ public class CorridaMercadoria extends Corrida {
         this.descricaoItem = descricaoItem;
         this.tamanho = tamanho;
         this.destinatario = destinatario;
+    }
+    
+    protected ArrayList<Motorista> verificarMotoristas() {
+        UFBER u = new UFBER();
+        return u.encontrarMotoristas(TipoContrato.PRO_LABORE);
     }
 
     public double calcularValor() {

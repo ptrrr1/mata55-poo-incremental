@@ -1,12 +1,12 @@
 #BlueJ package file
-objectbench.height=85
+objectbench.height=81
 objectbench.width=776
 package.divider.horizontal=0.6
-package.divider.vertical=0.816
-package.editor.height=401
+package.divider.vertical=0.824
+package.editor.height=405
 package.editor.width=672
-package.editor.x=225
-package.editor.y=480
+package.editor.x=210
+package.editor.y=175
 package.frame.height=600
 package.frame.width=800
 package.numDependencies=0
@@ -43,7 +43,7 @@ target4.name=Corrida
 target4.showInterface=false
 target4.type=AbstractTarget
 target4.width=120
-target4.x=220
+target4.x=240
 target4.y=20
 target5.height=70
 target5.name=CorridaPassageiro

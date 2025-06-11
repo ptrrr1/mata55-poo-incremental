@@ -1,6 +1,8 @@
 package Sistema;
 
+import java.util.List;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 
 import Sistema.Corrida.Corrida;
@@ -108,12 +110,12 @@ public class UFBER {
         return !isIn;
     }
     
-    public ArrayList<Motorista> encontrarMotoristasProLabore() {
+    public ArrayList<Motorista> encontrarMotoristas(List<TipoContrato> contratos) {
         ArrayList<Motorista> motoristas_disp = new ArrayList<>();
         
         for (Motorista m : this.motoristas) {
             TipoContrato m_contrato = m.getTipoContrato();
-            if (m.isAtivo() && (m_contrato == TipoContrato.PRO_LABORE || m_contrato == TipoContrato.ENTREGA)) {
+            if (m.isAtivo() && contratos.contains(m_contrato)) {
                 motoristas_disp.add(m);
             }
         }
@@ -121,29 +123,7 @@ public class UFBER {
         return motoristas_disp;
     }
     
-    public ArrayList<Motorista> encontrarMotoristasCarona() {
-        ArrayList<Motorista> motoristas_disp = new ArrayList<>();
-        
-        for (Motorista m : this.motoristas) {
-            TipoContrato m_contrato = m.getTipoContrato();
-            if (m.isAtivo() && m_contrato == TipoContrato.CARONA) {
-                motoristas_disp.add(m);
-            }
-        }
-        
-        return motoristas_disp;
-    }
-    
-    public ArrayList<Motorista> encontrarMotoristasEntrega() {
-        ArrayList<Motorista> motoristas_disp = new ArrayList<>();
-        
-        for (Motorista m : this.motoristas) {
-            TipoContrato m_contrato = m.getTipoContrato();
-            if (m.isAtivo() && m_contrato == TipoContrato.ENTREGA) {
-                motoristas_disp.add(m);
-            }
-        }
-        
-        return motoristas_disp;
+    public ArrayList<Motorista> encontrarMotoristas(TipoContrato contrato) {
+        return this.encontrarMotoristas(Collections.singletonList(contrato));
     }
 }

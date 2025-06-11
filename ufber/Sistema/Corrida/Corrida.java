@@ -1,7 +1,9 @@
 package Sistema.Corrida;
 
+import java.util.ArrayList;
 import java.time.LocalDateTime;
 
+import Sistema.UFBER;
 import Sistema.Usuario.Cliente;
 import Sistema.Usuario.Motorista;
 import Sistema.Corrida.Trajeto.Endereco;
@@ -33,7 +35,34 @@ public abstract class Corrida {
     }
 
     public abstract double calcularValor();
+    
+    protected abstract ArrayList<Motorista> verificarMotoristas();
 
+    public boolean encontrarMotorista() {
+        ArrayList<Motorista> m_list = this.verificarMotoristas();
+        
+        if (m_list.isEmpty()) {
+            System.out.println("Nao ha motoristas disponiveis");
+            return false;
+        }
+        
+        Motorista m = m_list.get(0);
+        
+        this.motorista = m;
+        //m.aceitarCorrida(this);
+        
+        return true;
+    }
+    
+    public void verificarTrajetos() {
+        UFBER ufber = new UFBER();
+        ArrayList<Trajeto> trajetos = ufber.getTrajetos();
+        
+        for (Trajeto t : trajetos) {
+            System.out.println(t.toString());
+        }
+    }
+    
     public LocalDateTime getDataHora() {
         return this.dataHora;
     }
